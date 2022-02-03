@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+
+*
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:hsl(0, 0%, 95%) ;
+}
+.row
+{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px auto 20px;
+    border-radius: 5%;
+}
+.col1,.col2,.col3{
+    padding: 40px;
+    color: hsl(0, 0%, 95%);
+}
+header
+{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.desc
+{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 100px;
+    line-height: 1.6;
+    font-size: 15px;
+
+}
+.col1
+{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.8em;
+    border-end-start-radius: 0.8em;
+}
+.col2
+{
+    background-color:hsl(184, 100%, 22%)  ;
+}
+.col3
+{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.8em;
+    border-end-end-radius: 0.8em;
+}
+ul
+{
+    list-style-type: none;
+}
+ul li:not( ul li:last-child)
+{
+    margin-bottom: 30px;
+}
+ul li:last-child
+{
+    margin-top: 85px;
+    margin-bottom: 20px;
+}
+button
+{
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border : 1px solid hsla(0, 0%, 100%, 0.75) ;
+    outline: none;
+    width : 128px;
+    cursor: pointer;
+    border-radius:2em ;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+}
+.col1 button{
+    color : hsl(31, 77%, 52%)
+}
+.col2 button{
+    color: hsl(184, 100%, 22%);
+}
+.col3 button{
+    color :hsl(179, 100%, 13%)
+}
+button:hover
+{
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+}
+footer .attribution { font-size: 11px; text-align: center; }
+footer    .attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width : 950px)
+{
+    .row{
+        flex-direction: column;
+    }
+    .col1{
+        border-top-left-radius: 0.8em;
+        border-top-right-radius: 0.8em;
+        border-end-start-radius : 0;
+    }
+    .col3{
+        border-end-start-radius: 0.8em;
+        border-end-end-radius: 0.8em;
+        border-top-right-radius: 0;
+    }
+    ul li:last-child
+    {
+        margin-top : 45px;
+        margin-bottom: 0;
+    }
+}
