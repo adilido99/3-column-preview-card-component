@@ -13,10 +13,10 @@ body{
 }
 .row
 {
-    width: 70%;
+    width : 62%;
     display: flex;
     flex-direction: row;
-    margin: 100px auto 20px;
+    margin: 125px auto 20px;
     border-radius: 5%;
 }
 .col1,.col2,.col3{
@@ -69,8 +69,8 @@ ul li:last-child
 }
 button
 {
-    background-color: hsla(0, 0%, 100%, 0.75);
-    border : 1px solid hsla(0, 0%, 100%, 0.75) ;
+    background-color: white;
+    border : 1px solid white ;
     outline: none;
     width : 128px;
     cursor: pointer;
@@ -91,10 +91,10 @@ button
 }
 button:hover
 {
-    color: hsla(0, 0%, 100%, 0.75);
+    color: white;
     background-color: transparent;
 }
-footer .attribution { font-size: 11px; text-align: center; }
+footer .attribution { font-size: 11px; text-align: center; font-family: 'Lexend Deca', sans-serif; }
 footer    .attribution a { color: hsl(228, 45%, 44%); }
 @media screen and (max-width : 950px)
 {
